@@ -8,6 +8,7 @@ With the following [Github repository](https://github.com/suprobe/AT-Conv-LSTM).
 
 
 Prerequisites:
+Tensorflow gpu has some system requirements of its own and in case you haven't worked with it before, it takes few steps before it can be installed. A detailed explanation of those steps is given [here](https://www.tensorflow.org/install/pip). In case those system requirements are satisfied, this project requires the following libraries
 ```
 - tensorflow-gpu            2.6.0 
 - keras                     2.6.0
