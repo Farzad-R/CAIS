@@ -6,7 +6,6 @@ from keras.layers.recurrent import LSTM
 from keras.models import *
 from keras.layers.convolutional import Conv1D
 from AttentionLayer import Attention
-from AttentionWithContextLayer import AttentionWithContext
 from keras.layers.wrappers import TimeDistributed
 
 

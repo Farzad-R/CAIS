@@ -24,3 +24,24 @@ conda install -c conda-forge keras
 pip install numpy==1.23.5
 python Train.py
 ```
+
+## Project structure:
+├── data                    # (added to .gitignore)
+│   ├── freeway
+├── model                   # For saving the model checkpoints 
+│ 
+├── workshop                # contains some images used in the workshop presentation
+│ 
+├── Train.py                # the executable module (calling the following modules in the given order)
+│       ├── ReadData.py        
+│       │       └── DataPreparation.py
+│       │
+│       ├── utils.py        # contains the loss functions
+│       │
+│       ├── Models.py       # contains two models (with/without attention mechanism)
+ 
+├──AttentionLayer.py        # contains the attention layer class used in the model
+│ 
+├──AttentionTutorial.ipynb  # the code used to investigate the attention mechanism during the workshop
+│
+├── ReadData                # contains the function for reading the data
