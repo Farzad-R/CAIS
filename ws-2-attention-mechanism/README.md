@@ -28,6 +28,7 @@ python Train.py
 ## Project structure:
 ├── data                    # (added to .gitignore)
 │   ├── freeway
+│   └── urban               # to be filled if you would like to train the model on urban data. Data can be found [here](https://github.com/suprobe/AT-Conv-LSTM)
 ├── model                   # For saving the model checkpoints 
 │ 
 ├── workshop                # contains some images used in the workshop presentation
@@ -38,10 +39,11 @@ python Train.py
 │       │
 │       ├── utils.py        # contains the loss functions
 │       │
-│       ├── Models.py       # contains two models (with/without attention mechanism)
- 
-├──AttentionLayer.py        # contains the attention layer class used in the model
-│ 
+│       └── Models.py       # contains two models (with/without attention mechanism)
+│               └── AttentionLayer.py
+│      
 ├──AttentionTutorial.ipynb  # the code used to investigate the attention mechanism during the workshop
 │
-├── ReadData                # contains the function for reading the data
+├──XplrAttention.py         # Extra module for further exploration of the attention mechanism used for traffic forecasting
+│
+└── README.md

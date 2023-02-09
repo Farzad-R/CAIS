@@ -1,5 +1,4 @@
 import keras
-from utils import *
 from keras.layers import Bidirectional
 from keras.layers.core import Dense, Flatten
 from keras.layers.recurrent import LSTM
