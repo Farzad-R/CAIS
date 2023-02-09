@@ -14,6 +14,7 @@ print("Num GPUs Available: ", len(tf.config.list_physical_devices("GPU")))
 random.seed(10)
 # configs
 datatype = "freeway"
+# urban datatype does not exist in the data directory. If you would like to test it, download the data from the original repository and put it in data/urban directory
 epoch = 15
 seq_len = 15
 pre_len = 12
