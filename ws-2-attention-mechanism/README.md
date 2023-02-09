@@ -29,7 +29,7 @@ python Train.py
 ```
 ├── data                    # (added to .gitignore)
 │   ├── freeway
-│   └── urban               # to be filled if you would like to train the model on urban data. Data can be found [here](https://github.com/suprobe/AT-Conv-LSTM)
+│   └── urban               # to be filled if you would like to train the model on urban data. Data can be found here: https://github.com/suprobe/AT-Conv-LSTM
 ├── model                   # For saving the model checkpoints 
 │ 
 ├── workshop                # contains some images used in the workshop presentation
