@@ -26,6 +26,7 @@ python Train.py
 ```
 
 ## Project structure:
+```
 ├── data                    # (added to .gitignore)
 │   ├── freeway
 │   └── urban               # to be filled if you would like to train the model on urban data. Data can be found [here](https://github.com/suprobe/AT-Conv-LSTM)
@@ -47,3 +48,4 @@ python Train.py
 ├──XplrAttention.py         # Extra module for further exploration of the attention mechanism used for traffic forecasting
 │
 └── README.md
+```
