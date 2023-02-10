@@ -20,8 +20,8 @@ seq_len = 15
 pre_len = 12
 pre_sens_num = 1
 batch_size = 128
-model_type = "with_attention"
-# model_type = "without_attention"
+# model_type = "with_attention"
+model_type = "without_attention"
 demo = True
 
 Data = ReadData(
