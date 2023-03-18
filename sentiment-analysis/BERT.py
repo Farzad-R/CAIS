@@ -1,4 +1,3 @@
-# https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html
 # Dataset: https://www.kaggle.com/datasets/abhi8923shriv/sentiment-analysis-dataset
 #%%
 import transformers
@@ -9,6 +8,8 @@ from pyprojroot import here
 from torch.utils.data import TensorDataset, DataLoader
 epochs = 1
 learning_rate = 5e-5
+batch_size = 32
+
 # Check if GPU is available or not and set the device
 if torch.cuda.is_available():       
     device = torch.device("cuda")
@@ -43,12 +44,11 @@ model.to(device)
 #%%
 # Tokenize and encode the sentences
 encoded_inputs = tokenizer(sentences, padding=True, truncation=True, max_length=128, return_tensors='pt')
-#%%
+
 # Convert data to PyTorch TensorDataset
 dataset = TensorDataset(encoded_inputs['input_ids'], encoded_inputs['attention_mask'], torch.from_numpy(labels).float())
-#%%
+
 # Create DataLoader to generate batches
-batch_size = 32
 dataloader = DataLoader(dataset, batch_size=batch_size)
 #%%
 # Fine-tune the model on the sentiment analysis task
