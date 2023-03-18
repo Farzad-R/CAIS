@@ -9,9 +9,10 @@ from tqdm.notebook import tqdm, trange
 import tensorflow as tf
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.losses import SparseCategoricalCrossentropy
+from pyprojroot import here
 
 # Load the data movie_line_data
-line_data = pd.read_csv('data/archive/movie_lines.tsv', encoding='utf-8-sig',header=None)
+line_data = pd.read_csv(here('data//movie_lines/movie_lines.tsv'), encoding='utf-8-sig',header=None)
 line_data = line_data[0].str.split('\t').to_list()
 
 line_data = [l for l in line_data if len(l) == 5]
@@ -22,7 +23,7 @@ lines = pd.DataFrame(line_data, columns=['line_id', 'speaker_id', 'movie_id', 's
 lines = lines.set_index('line_id')
 lines.loc['L1000']
 
-conversation_data = pd.read_csv('data/archive/movie_conversations.tsv', encoding='utf-8-sig', sep='\t', header=None)
+conversation_data = pd.read_csv(here('data/archive/movie_conversations.tsv'), encoding='utf-8-sig', sep='\t', header=None)
 conversation_data = conversation_data.rename(columns={0: 'speaker1_id', 1: 'speaker2_id', 2: 'movie_id', 3: 'line_ids'})
 conversation_data
 
