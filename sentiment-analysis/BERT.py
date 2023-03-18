@@ -6,7 +6,7 @@ import pandas as pd
 from tqdm import tqdm
 from pyprojroot import here
 from torch.utils.data import TensorDataset, DataLoader
-epochs = 1
+epochs = 5
 learning_rate = 5e-5
 batch_size = 32
 
@@ -72,20 +72,23 @@ for epoch in range(epochs):
         epoch_loss += loss.item()
     print(f"Epoch {epoch} Loss: {epoch_loss/len(dataloader)}")
 #%%
+def evaluate_my_sentence(new_sentences):
+    encoded_inputs = tokenizer(new_sentences, padding=True, truncation=True, max_length=128, return_tensors='pt')
+    encoded_inputs.to(device)
+    classes = {0:"Negative", 1:"Neutral", 2:"Positive"}
+    model.eval()
+    with torch.no_grad():
+        outputs = model(**encoded_inputs)
+        predictions = torch.softmax(outputs.logits, dim=1).argmax(dim=1)
+        for i in range(len(new_sentences)):
+            print(new_sentences[i], "==>", classes[predictions[i].item()])
+    return None
+
+
 # Test the model on new data
 new_sentences = ["This movie was great!", "This product is terrible!", "I am neutral about this."]
-encoded_inputs = tokenizer(new_sentences, padding=True, truncation=True, max_length=128, return_tensors='pt')
-encoded_inputs.to(device)
 
-classes = {0:"Negative", 1:"Neutral", 2:"Positive"}
 
-model.eval()
-with torch.no_grad():
-    outputs = model(**encoded_inputs)
-    predictions = torch.softmax(outputs.logits, dim=1).argmax(dim=1)
-
-print("predictions:", predictions)
-for i in range(len(new_sentences)):
-    print(new_sentences[i], "==>", classes[predictions[i].item()]) 
-
-# %%
+# what do you have in mind?
+new_sentences = ['I love killing children']
+evaluate_my_sentence(new_sentences)
