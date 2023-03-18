@@ -7,9 +7,11 @@ and trains the model using model.fit()
 pip install tensorflow_datasets
 '''
 """
-
+# Import the librarties
 import tensorflow as tf
 import tensorflow_datasets as tfds
+
+print("tensorflow version:", tf.__version__)
 
 # Load the COCO dataset
 dataset, info = tfds.load('coco/2017', with_info=True)

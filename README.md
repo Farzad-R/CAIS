@@ -1,5 +1,5 @@
 # Carleton AI Society
-This repository contains the codes used in CAIS workshops.
+This repository contains the codes that I present at Carleton AI Society ([CAIS](https://carletonai.com/)) workshops.
 
 ## cloning the repository:
 Open the terminal and enter the directory that you would like to have the repository and run
