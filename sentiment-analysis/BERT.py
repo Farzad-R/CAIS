@@ -86,4 +86,4 @@ print(predictions)
 for i in predictions:
     # print(i.item())
     print("Results:", classes[i.item()]) 
-# %%
+
