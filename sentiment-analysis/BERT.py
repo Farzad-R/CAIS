@@ -8,7 +8,7 @@ from pyprojroot import here
 from torch.utils.data import TensorDataset, DataLoader
 epochs = 1
 learning_rate = 5e-5
-batch_size = 16
+batch_size = 32
 
 # Check if GPU is available or not and set the device
 if torch.cuda.is_available():       
@@ -54,7 +54,7 @@ dataloader = DataLoader(dataset, batch_size=batch_size)
 del (data, labels, sentences)
 #%%
 # Fine-tune the model on the sentiment analysis task
-optimizer = transformers.AdamW(model.parameters(), lr=learning_rate)
+optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 loss_fn = torch.nn.BCEWithLogitsLoss()
 
 #%%
@@ -84,7 +84,8 @@ with torch.no_grad():
     outputs = model(**encoded_inputs)
     predictions = torch.softmax(outputs.logits, dim=1).argmax(dim=1)
 
-print(predictions)
-for i in predictions:
-    # print(i.item())
-    print("Results:", classes[i.item()]) 
+print("predictions:", predictions)
+for i in range(len(new_sentences)):
+    print(new_sentences[i], "==>", classes[predictions[i].item()]) 
+
+# %%
