@@ -1,4 +1,6 @@
-# Carleton AI Society
+# Carleton AI Society (CAIS)
+![alt text](logo/CAIS.png)
+
 This repository contains the codes of Carleton AI Society's ([CAIS](https://carletonai.com/)) workshops that I present at [Carleton University](https://carleton.ca/).
 
 ## cloning the repository:
