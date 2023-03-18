@@ -1,7 +1,7 @@
 # Carleton AI Society (CAIS)
 ![CAIS](logo/CAIS.png)
 
-This repository contains the presentations and the codes of my workshop's at Carleton AI Society ([CAIS](https://carletonai.com/)).
+This repository contains the presentations and the codes of my workshops at Carleton AI Society ([CAIS](https://carletonai.com/)).
 
 ## cloning the repository:
 Open the terminal and enter the directory that you would like to create the repository and run
