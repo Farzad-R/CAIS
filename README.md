@@ -4,7 +4,7 @@
 This repository contains the presentations and the codes of my workshops at Carleton AI Society ([CAIS](https://carletonai.com/)).
 
 ## cloning the repository:
-Open the terminal and enter the directory that you would like to create the repository and run
+Open the terminal and enter the directory in which you would like to create the repository and run:
 
 ```
 git clone https://github.com/Farzad-R/CAIS.git
