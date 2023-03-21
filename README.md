@@ -10,13 +10,6 @@ Open the terminal and enter the directory in which you would like to create the 
 git clone https://github.com/Farzad-R/CAIS.git
 ```
 
-## Contact information:
-[website](https://farzad-r.github.io/)
-[Linkedin](https://www.linkedin.com/in/farzad-roozitalab-173066152/)</br>
-[Twitter](https://twitter.com/Farzad_rzt)</br>
-[Email](farzadroozitalab@cmail.carleton.ca)
-
-
 ### Project description:
 <p>
     <b>- distributed-training:</b> Distributing tensorflow and pytorch models over a single/multiple
@@ -51,3 +44,9 @@ git clone https://github.com/Farzad-R/CAIS.git
     data, specifically movie dialogue.
 
 </p>
+
+## Contact information:
+[website](https://farzad-r.github.io/)
+[Linkedin](https://www.linkedin.com/in/farzad-roozitalab-173066152/)</br>
+[Twitter](https://twitter.com/Farzad_rzt)</br>
+[Email](farzadroozitalab@cmail.carleton.ca)
