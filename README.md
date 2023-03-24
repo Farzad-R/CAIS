@@ -2,9 +2,9 @@
 ![CAIS](logo/CAIS.png)
 
 This is a collection of AI projects presented at Carleton AI Society ([CAIS](https://carletonai.com/)) workshops. The repository includes code for 
-various applications of deep learning, such as text generation with GPT-2, sentiment analysis with BERT, and image classification with convolutional neural networks. 
-Other projects explore topics. Each project is accompanied by a detailed description and a link to the source code. Whether you're an AI enthusiast or a beginner 
-looking to learn more about deep learning, this repository provides a range of interesting and informative projects to explore.
+various applications of deep learning, such as text generation with GPT-2, sentiment analysis with BERT. Each project is accompanied by a detailed 
+description and a link to the source code. Whether you're an AI enthusiast or a beginner looking to learn more about deep learning, this repository 
+provides a range of interesting and informative projects to explore.
 
 
 ## cloning the repository:
