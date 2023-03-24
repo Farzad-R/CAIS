@@ -39,6 +39,10 @@ git clone https://github.com/Farzad-R/CAIS.git
 
 </p>
 <p>
+    <b>- VAE-fashion_mnist:</b> Implementing a Variational Autoencoder (VAE) to generate fashion MNIST images.
+
+</p>
+<p>
     <b>- OpenCV-real-time-face-detection:</b> Using the Haar Cascade face detection algorithm to detect
     faces in each frame of the video stream from the webcam.
 

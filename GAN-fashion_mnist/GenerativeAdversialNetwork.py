@@ -1,13 +1,23 @@
 """
-This code trains a Generative Adversarial Network (GAN) using the Fashion-MNIST dataset to generate 
-fake images. The generator model generates fake images from random noise while the discriminator 
-model learns to distinguish between real and fake images. The GAN model combines the generator 
-and discriminator models. The GAN is trained to minimize the loss of the discriminator in 
-distinguishing real and fake images and maximize the loss of the generator in fooling the 
-discriminator. The code outputs the progress after each epoch and generates images for visualization.
+This code is a basic implementation of a Generative Adversarial Network (GAN) using TensorFlow and Keras. 
+It trains a generator and a discriminator model on the Fashion-MNIST dataset to generate fake images of 
+clothing items.
+The generator model generates fake images from random noise while the discriminator model learns to distinguish
+between real and fake images. The GAN model combines the generator and discriminator models. The GAN is trained
+to minimize the loss of the discriminator in distinguishing real and fake images and maximize the loss of the 
+generator in fooling the discriminator.
 
+Code breakdown:
+- loads the dataset
+- normalizes the images
+- designs the generator and discriminator models
+- compiles the models
+- trains the GAN model
+- and outputs the progress after each epoch.
+- Additionally, every third epoch, it outputs 25 generated images for visualization.
 
-Generative Adversarial Network (GAN):
+=================================================
+Overview of Generative Adversarial Network (GAN):
 It is a type of generative model that consists of two neural networks working in tandem:
 a generator and a discriminator.
 
@@ -32,6 +42,7 @@ The generator network typically consists of one or more fully connected layers f
 or more convolutional transpose layers, while the discriminator network consists of one or more 
 convolutional layers followed by one or more fully connected layers. Both networks may also use 
 batch normalization, dropout, and activation functions such as ReLU or LeakyReLU.
+=================================================
 """
 
 # Import the librarties
@@ -41,16 +52,18 @@ import matplotlib.pyplot as plt
 from tensorflow.keras.datasets import fashion_mnist
 from tensorflow.keras.layers import Dense, Reshape, Flatten, Conv2DTranspose, Conv2D, LeakyReLU, Dropout
 from tensorflow.keras.models import Sequential
+from tqdm import tqdm
 
 print("tensorflow version:", tf.__version__)
 print("numpy version:", np.__version__)
 
 # Load the Fashion-MNIST dataset
-(train_images, train_labels), (_, _) = fashion_mnist.load_data()
+(train_images, train_labels), (test_images, test_labels) = fashion_mnist.load_data()
 
 
 # Normalize the images
-train_images = train_images / 255.0
+x_train = train_images / 255.0
+x_test = test_images / 255.0
 
 # Design the generator model
 generator = Sequential([
@@ -91,11 +104,16 @@ gan.compile(loss='binary_crossentropy', optimizer=tf.keras.optimizers.Adam(0.000
 # Train the GAN model
 epochs = 100
 batch_size = 128
-steps_per_epoch = int(train_images.shape[0] / batch_size)
+steps_per_epoch = int(x_train.shape[0] / batch_size)
 num_images = 25
 
+
+# -------------------------------------------------
+#  Train and plot simultaneusly (for presentation)
+# -------------------------------------------------
+
 for epoch in range(epochs):
-    for step in range(steps_per_epoch):
+    for step in tqdm(range(steps_per_epoch)):
         # Train the discriminator on real and fake images
         real_images = train_images[np.random.randint(0, train_images.shape[0], size=batch_size)]
         real_images = np.expand_dims(real_images, axis=-1)
@@ -113,7 +131,7 @@ for epoch in range(epochs):
     print(f"Epoch {epoch+1}/{epochs}, Discriminator Loss: {d_loss}, Generator Loss: {g_loss}")
 
     # Output generated images for visualization
-    if (epoch+1) % 10 == 0:
+    if (epoch+1) % 3 == 0:
         generated_images = generator.predict(np.random.normal(0, 1, [num_images, 100]))
         generated_images = generated_images.reshape(num_images, 28, 28)
         plt.figure(figsize=(10,10))
