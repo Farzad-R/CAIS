@@ -3,7 +3,7 @@
 
 This is a collection of AI projects presented at Carleton AI Society ([CAIS](https://carletonai.com/)) workshops. The repository includes code for 
 various applications of deep learning, such as text generation with GPT-2, sentiment analysis with BERT, and generating fake images with GAN. 
-Each project is accompanied by a detailed description and a link to the source code. Whether you're an AI enthusiast or a beginner looking to 
+Each project is accompanied by a detailed description and a link to the necessary sources. Whether you're an AI enthusiast or a beginner looking to 
 learn more about deep learning, this repository provides a range of interesting and informative projects to explore.
 
 
