@@ -22,7 +22,7 @@ git clone https://github.com/Farzad-R/CAIS.git
 </p>
 
 <p>
-    <b>- GPT2 Text Generation:</b> Using GPT-2 to generate text based on an open-source dataset of movie summaries.
+    <b>- GPT2-TextGeneration:</b> Using GPT-2 to generate text based on an open-source dataset of movie summaries.
 </p>
 
 <p>
