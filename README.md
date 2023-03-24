@@ -60,7 +60,7 @@ git clone https://github.com/Farzad-R/CAIS.git
 </p>
 
 ## Contact information:
-[website](https://farzad-r.github.io/)
+[website](https://farzad-r.github.io/) </br>
 [Linkedin](https://www.linkedin.com/in/farzad-roozitalab-173066152/)</br>
-[Twitter](https://twitter.com/Farzad_rzt)</br>
+[Twitter](https://twitter.com/Farzad_rzt) </br>
 [Email](farzadroozitalab@cmail.carleton.ca)
