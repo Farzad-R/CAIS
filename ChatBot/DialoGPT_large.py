@@ -29,6 +29,23 @@ def filter_response(prompt, response):
     return filtered_sentences[0]
 
 def generate_response(prompt, max_length=100, temperature=0.7, top_k=50, repetition_penalty=1.2, num_return_sequences=3):
+    """
+    This function generates a response to a given prompt using the DialoGPT model.
+    The function first encodes the prompt using the tokenizer, adding an end-of-sequence token (eos_token) to the end of the input.
+    It then passes the encoded input to the generate() method of the DialoGPT model, which generates one or more responses to the input
+    based on the model's learned probabilities. The generate() method takes several parameters, including max_length, temperature, top_k,
+    and num_return_sequences, which control various aspects of the response generation process. The function then decodes the generated
+    responses using the tokenizer and returns them as a list.
+
+    Arguments: 
+    - prompt: The prompt for which a response is being generated.
+    - max_length: The maximum length (in tokens) of the generated response.
+    - temperature: A value that controls the "creativity" of the generated response. Lower temperatures result in more conservative responses,
+    while higher temperatures result in more creative (and potentially nonsensical) responses.
+    - top_k: The number of top-scoring tokens to consider when generating the next token. Higher values result in more conservative responses,
+    while lower values result in more creative (and potentially nonsensical) responses.
+    - num_return_sequences: The number of alternative responses to generate.
+    """
     # Encode the user input using the tokenizer
     input_ids = tokenizer.encode(prompt + tokenizer.eos_token, return_tensors="pt")
     # new_user_input_ids = tokenizer.encode(input(">> User:") + tokenizer.eos_token, return_tensors='pt')
