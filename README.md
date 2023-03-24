@@ -54,7 +54,7 @@ git clone https://github.com/Farzad-R/CAIS.git
     Performing image classification on two datasets (cifar10 and mnist) using Convolutional Neural Network.
 </p>
 <p>
-    - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/image-classification"><b>predict-the-next-word</b></a>:
+    - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/predict-the-next-word"><b>predict-the-next-word</b></a>:
     Training a language model based on LSTM architecture to generate text data, specifically movie dialogue.
 </p>
 
