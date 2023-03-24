@@ -1,6 +1,5 @@
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 from datasets import load_dataset
-import torch
 
 """
 we'll use GPT-2 to generate text based on an open-source dataset of movie summaries:
@@ -29,6 +28,6 @@ def generate_text(prompt, max_length=100):
     return output_text
 
 
-# Generate a movie summary based on the prompt "In a world where..."
+# Generate a sample movie summary
 summary = generate_text("If you want to teach me how to stand on my feet \n")
 print(summary)
