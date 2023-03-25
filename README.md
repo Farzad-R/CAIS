@@ -1,4 +1,4 @@
-# Carleton AI Society (CAIS)
+# CAIS AI Projects
 ![CAIS](logo/CAIS.png)
 
 This is a collection of AI projects presented at Carleton AI Society ([CAIS](https://carletonai.com/)) workshops. The repository includes code for 
