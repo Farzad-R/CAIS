@@ -14,7 +14,7 @@ Open the terminal and enter the directory in which you would like to create the 
 git clone https://github.com/Farzad-R/CAIS.git
 ```
 
-### Project description:
+## Project description:
 <h3>Generative AI:</h3>
 <p>
     - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/GAN-fashion_mnist"><b>GAN-fashion_mnist</b></a>:
