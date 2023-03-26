@@ -63,7 +63,7 @@ def build_gan(generator, discriminator):
 
 # Define the hyperparameters
 latent_dim = 100 # noise dimension
-epochs = 50
+epochs = 20000
 batch_size = 128
 sample_interval = 1000
 
