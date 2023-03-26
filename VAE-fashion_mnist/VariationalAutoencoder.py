@@ -44,27 +44,29 @@ x_train = x_train.astype('float32') / 255.
 x_test = x_test.astype('float32') / 255.
 
 # Flatten the images
-original_dim = 784
+original_dim = 784 # The dimensions of the input images
 x_train = x_train.reshape((len(x_train), original_dim))
 x_test = x_test.reshape((len(x_test), original_dim))
 
 input_shape = (original_dim,)
 
-# Dimensions of the latent space
-latent_dim = 2
-
-# The size of the intermediate layer
-intermediate_dim = 256
+latent_dim = 2 # Dimensions of the latent space
+intermediate_dim = 256 # The size of the intermediate layer
 batch_size = 128
-epochs = 10000
+epochs = 20
 
 # Define the sampling function for the VAE
 def sampling(args):
+    """
+    generate random samples from a normal distribution with a mean and
+    standard deviation derived from the encoded latent variables.
+    """
     z_mean, z_log_var = args
     epsilon = K.random_normal(shape=(K.shape(z_mean)[0], latent_dim), mean=0., stddev=1.)
     return z_mean + K.exp(0.5 * z_log_var) * epsilon
 
-# Define the encoder model
+# Define the encoder model: takes the input image and outputs the mean and standard deviation of 
+# the learned distribution and a sample from the learned distribution.
 inputs = Input(shape=input_shape)
 x = Dense(intermediate_dim, activation='relu')(inputs)
 z_mean = Dense(latent_dim)(x)
@@ -74,7 +76,7 @@ encoder = Model(inputs, [z_mean, z_log_var, z], name='encoder')
 encoder.summary()
 # plot_model(encoder, to_file='encoder.png', show_shapes=True)
 
-# Define the decoder model
+# Define the decoder model: takes a sample from the learned distribution and generates a new image.
 latent_inputs = Input(shape=(latent_dim,))
 x = Dense(intermediate_dim, activation='relu')(latent_inputs)
 outputs = Dense(original_dim, activation='sigmoid')(x)
@@ -82,11 +84,17 @@ decoder = Model(latent_inputs, outputs, name='decoder')
 decoder.summary()
 # plot_model(decoder, to_file='decoder.png', show_shapes=True)
 
-# Define the VAE model
+# Define the VAE model: takes the input image and generates the output image.
 outputs = decoder(encoder(inputs)[2])
 vae = Model(inputs, outputs, name='vae')
 
-# Define the loss function for the VAE
+# Define the loss function for the VAE:
+"""
+The loss function for the VAE is defined as a combination of the reconstruction loss 
+(the difference between the input and output images) and the Kullback-Leibler divergence
+(KL divergence) between the learned distribution and the prior distribution of the latent
+variables.
+"""
 reconstruction_loss = mse(inputs, outputs)
 reconstruction_loss *= original_dim
 kl_loss = 1 + z_log_var - K.square(z_mean) - K.exp(z_log_var)
@@ -104,7 +112,7 @@ history = vae.fit(
     epochs=epochs,
     batch_size=batch_size,
     validation_data=(x_test, None),
-    callbacks=[early_stop]
+    # callbacks=[early_stop]
     )
 
 # Generate some fake images using the decoder
