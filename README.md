@@ -15,7 +15,7 @@ git clone https://github.com/Farzad-R/CAIS.git
 ```
 
 ## Project description:
-<h3>Generative AI:</h3>
+<h3>**Generative AI:**</h3>
 <p>
     - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/GAN-fashion_mnist"><b>GAN-fashion_mnist</b></a>:
     Training a Generative Adversarial Network (GAN) using the Fashion-MNIST dataset to generate fake images.
@@ -25,7 +25,7 @@ git clone https://github.com/Farzad-R/CAIS.git
     Implementing a Variational Autoencoder (VAE) to generate fashion MNIST images.
 </p>
 <!-- ====================================================================================== -->
-<h3>Natural Language Processing:</h3>
+<h3>**Natural Language Processing:**</h3>
 <p>
     - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/ChatBot"><b>ChatBot</b></a>:
     Useing DialoGPT_medium and DialoGPT_large to make chatbots. The code also applies some filters to the 
