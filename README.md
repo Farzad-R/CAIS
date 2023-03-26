@@ -15,7 +15,7 @@ git clone https://github.com/Farzad-R/CAIS.git
 ```
 
 ## Project description:
-<h3><b>Generative AI:</b></h3>
+<h2>Generative AI:</h2>
 <p>
     - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/GAN-fashion_mnist"><b>GAN-fashion_mnist</b></a>:
     Training a Generative Adversarial Network (GAN) using the Fashion-MNIST dataset to generate fake images.
