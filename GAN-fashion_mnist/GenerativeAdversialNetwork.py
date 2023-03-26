@@ -8,7 +8,8 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-
+import os
+from pyprojroot import here
 # Load the data
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
 
@@ -79,6 +80,12 @@ discriminator.compile(loss='binary_crossentropy', optimizer=Adam(0.0002, 0.5), m
 # Compile the GAN model
 gan.compile(loss='binary_crossentropy', optimizer=Adam(0.0002, 0.5))
 
+directory = here("GAN-fashion_mnist/images")
+
+if not os.path.exists(directory):
+    os.makedirs(directory)
+    print(f"Directory '{directory}' created successfully!")
+
 # Function to sample and save generated images
 def sample_images(generator, epoch, latent_dim):
     # Generate a batch of noise vectors
@@ -98,6 +105,8 @@ def sample_images(generator, epoch, latent_dim):
             axs[i,j].imshow(gen_imgs[count, :, :, 0], cmap='gray')
             axs[i,j].axis('off')
             count += 1
+    
+    
     fig.savefig(f"GAN-fashion_mnist/images/{epoch}.png")
     plt.close()
 
