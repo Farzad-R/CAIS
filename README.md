@@ -54,6 +54,10 @@ git clone https://github.com/Farzad-R/CAIS.git
     - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/image-classification"><b>image-classification</b></a>:
     Performing image classification on two datasets (cifar10 and mnist) using Convolutional Neural Network.
 </p>
+<p>
+    - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/U-NET-Image-Segmentation"><b>U-NET-Image-Segmentation</b></a>:
+    Designing a U-Net to perform semantic image segmentation on the CARLA self-driving car dataset, and apply sparse categorical crossentropy for pixelwise prediction.
+</p>
 <!-- ====================================================================================== -->
 <h3>Time Series Forecasting:</h3>
 <p>
