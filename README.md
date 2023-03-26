@@ -25,7 +25,7 @@ git clone https://github.com/Farzad-R/CAIS.git
     Implementing a Variational Autoencoder (VAE) to generate fashion MNIST images.
 </p>
 <!-- ====================================================================================== -->
-<h3>Natural Language Processing:</h3>
+<h2>Natural Language Processing:</h2>
 <p>
     - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/ChatBot"><b>ChatBot</b></a>:
     Useing DialoGPT_medium and DialoGPT_large to make chatbots. The code also applies some filters to the 
@@ -45,7 +45,7 @@ git clone https://github.com/Farzad-R/CAIS.git
     Training a language model based on LSTM architecture to generate text data, specifically movie dialogue.
 </p>
 <!-- ====================================================================================== -->
-<h3>Computer vision:</h3>
+<h2>Computer vision:</h2>
 <p>
     - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/OpenCV-real-time-face-detection"><b>OpenCV-real-time-face-detection</b></a>:
     Using the Haar Cascade face detection algorithm to detect faces in each frame of the video stream from the webcam.
@@ -59,13 +59,13 @@ git clone https://github.com/Farzad-R/CAIS.git
     Designing a U-Net to perform semantic image segmentation on the CARLA self-driving car dataset, and apply sparse categorical crossentropy for pixelwise prediction.
 </p>
 <!-- ====================================================================================== -->
-<h3>Time Series Forecasting:</h3>
+<h2>Time Series Forecasting:</h2>
 <p>
     - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/attention-mechanism"><b>attention-mechanism</b></a>:
     Developing a custom layer for attention mechanism using Keras and seeing an example of attention mechanism in traffic forecasting.
 </p>
 <!-- ====================================================================================== -->
-<h3>Deep Learning Infrastructure:</h3>
+<h2>Deep Learning Infrastructure:</h2>
 <p>
     - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/distributed-training"><b>distributed-training</b></a>:
     Distributing tensorflow and pytorch models over a single/multiple available GPUs.
