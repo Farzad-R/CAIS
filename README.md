@@ -1,5 +1,5 @@
 # CAIS AI Projects
-![CAIS](logo/CAIS.png)
+<img src="logo/CAIS.png" alt="CAIS" width="200" height="200">
 
 This is a collection of AI projects that I present at Carleton AI Society ([CAIS](https://carletonai.com/)) workshops. The repository includes code for 
 various applications of deep learning, such as text generation with GPT-2, sentiment analysis with BERT, and generating fake images with GAN. 
