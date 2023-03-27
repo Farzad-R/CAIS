@@ -43,7 +43,7 @@ or
 pip install -r torchenv_requirements.txt
 ```
 
-><b>Note:</b>< The "tfenvv_requirements.txt" file contains the required libraries for TensorFlow, and the "torchenv_requirements.txt" file contains the required libraries for PyTorch. However, >using these files may install additional libraries that may not be required for the projects at the moment, so it is recommended to manually install the required libraries. You may also want to >have one separate environment for TensorFlow and another one for PyTorch. If you encounter any issues during installation, please refer to the official documentation for each library.
+<b>Note:</b>< The "tfenvv_requirements.txt" file contains the required libraries for TensorFlow, and the "torchenv_requirements.txt" file contains the required libraries for PyTorch. However, using these files may install additional libraries that may not be required for the projects at the moment, so it is recommended to manually install the required libraries. You may also want to have one separate environment for TensorFlow and another one for PyTorch. If you encounter any issues during installation, please refer to the official documentation for each library.
 
 ## Project description:
 <h2>Generative AI:</h2>
