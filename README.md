@@ -1,4 +1,4 @@
-# CAIS AI Projectst test
+# CAIS AI Projectst
 ![CAIS](logo/CAIS.png)
 
 This is a collection of AI projects that I present at Carleton AI Society ([CAIS](https://carletonai.com/)) workshops. The repository includes code for 
