@@ -1,5 +1,11 @@
-# Dataset: https://www.kaggle.com/datasets/Cornell-University/movie-dialog-corpus
-# data load and preprocessing from: https://www.kaggle.com/code/malyvsen/chatbot-movie-dialogs
+""" 
+Dataset: https://www.kaggle.com/datasets/Cornell-University/movie-dialog-corpus
+data load and preprocessing from: https://www.kaggle.com/code/malyvsen/chatbot-movie-dialogs
+To run the code, download the data from the given URL and create the following direcories:
+'CAIS/data/archive/movie_conversations.tsv'
+'data/archive/movie_conversations.tsv'
+"""  
+
 
 from collections import Counter
 import random

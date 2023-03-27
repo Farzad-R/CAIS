@@ -1,4 +1,8 @@
-# Dataset: https://www.kaggle.com/datasets/abhi8923shriv/sentiment-analysis-dataset
+"""
+Dataset: https://www.kaggle.com/datasets/abhi8923shriv/sentiment-analysis-dataset
+To run the code, download the data from the given URL and create the following directory:
+'CAIS/data/sentient_analysis/train.csv'
+"""
 #%%
 import transformers
 import torch

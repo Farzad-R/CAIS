@@ -12,8 +12,6 @@ learning_rate = 0.001
 epochs = 1
 early_stopper_paitient = 2
 
-
-
 # load data
 mnist_train = dsets.MNIST(root=here("data/"),
                           train=True,
