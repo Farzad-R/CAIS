@@ -6,7 +6,7 @@ various applications of deep learning, such as text generation with GPT-2, senti
 Each project is accompanied by a detailed description and a link to the necessary sources. Whether you're an AI enthusiast or a beginner looking to 
 learn more about deep learning, this repository provides a range of interesting and informative projects to explore.
 
->ATTENTION: Please note that in the event that the project necessitates an external dataset, kindly refer to the corresponding module for the URL and associated guide.
+>ATTENTION: Please note that in the event that the project necessitates an external dataset, the URL and associated guide is provided in the corresponding module.
 
 ## cloning the repository:
 Open the terminal and enter the directory in which you would like to create the repository and run:
