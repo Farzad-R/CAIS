@@ -20,12 +20,14 @@ from data_prep import prepare_mnist_data
 import mlflow
 import configparser
 from pyprojroot import here
+import random
 
 def main():
     # Read configuration parameters from the mlflow.cfg file
     config = configparser.ConfigParser()
     config.read(here("MLflow/mlflow.cfg"))
     random_seed = int(config["MLflowTutorial"]["random_seed"])
+    random.seed(random_seed)
     learning_rate = float(config["MLflowTutorial"]["learning_rate"])
     early_stop_patience = int(config["MLflowTutorial"]["early_stop_patience"])
     optimizer = config["MLflowTutorial"]["optimizer"]
