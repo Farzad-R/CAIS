@@ -101,6 +101,13 @@ pip install -r torchenv_requirements.txt
     - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/distributed-training"><b>distributed-training</b></a>:
     Distributing tensorflow and pytorch models over a single/multiple available GPUs.
 </p>
+<!-- ====================================================================================== -->
+<h2>Workflow management:</h2>
+<p>
+    - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/MLflow-tutorial"><b>MLflow-tutorial</b></a>:
+    MLflow-based Pipeline for Efficient Machine Learning Experimentation and Tracking.
+</p>
+
 
 
 ## Contact information:
