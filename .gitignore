@@ -3,6 +3,5 @@ models/*
 model/*
 data/*
 data
-MLflow
 __pycache__
 YOLO-You Only Look Once
