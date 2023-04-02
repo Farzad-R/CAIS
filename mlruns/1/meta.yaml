@@ -1,0 +1,6 @@
+artifact_location: file:///F:/Github/CAIS/mlruns/1
+creation_time: 1680465208296
+experiment_id: '1'
+last_update_time: 1680465208296
+lifecycle_stage: active
+name: cnn_mnist

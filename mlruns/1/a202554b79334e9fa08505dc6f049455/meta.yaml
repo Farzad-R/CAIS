@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/Github/CAIS/mlruns/1/a202554b79334e9fa08505dc6f049455/artifacts
+end_time: 1680465315615
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: a202554b79334e9fa08505dc6f049455
+run_name: efficient-squid-966
+run_uuid: a202554b79334e9fa08505dc6f049455
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680465208540
+status: 3
+tags: []
+user_id: farza
