@@ -104,7 +104,7 @@ pip install -r torchenv_requirements.txt
 <!-- ====================================================================================== -->
 <h2>Workflow management:</h2>
 <p>
-    - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/MLflow-tutorial"><b>MLflow-tutorial</b></a>:
+    - <a style=" white-space:nowrap; " href="https://github.com/Farzad-R/CAIS/tree/main/MLflow-experiment"><b>MLflow-experiment</b></a>:
     MLflow-based pipeline for efficient Machine Learning experimentation and tracking.
 </p>
 
