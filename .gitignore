@@ -3,5 +3,6 @@ models/*
 model/*
 data/*
 data
+DETR-image-classification
 __pycache__
 YOLO-You Only Look Once

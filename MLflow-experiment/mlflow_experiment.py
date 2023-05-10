@@ -25,7 +25,7 @@ import random
 def main():
     # Read configuration parameters from the mlflow.cfg file
     config = configparser.ConfigParser()
-    config.read(here("MLflow/mlflow.cfg"))
+    config.read(here("MLflow-experiment/mlflow.cfg"))
     random_seed = int(config["MLflowTutorial"]["random_seed"])
     random.seed(random_seed)
     learning_rate = float(config["MLflowTutorial"]["learning_rate"])
