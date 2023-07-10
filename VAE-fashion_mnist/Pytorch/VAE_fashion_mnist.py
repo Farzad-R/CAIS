@@ -1,3 +1,4 @@
+# Reference: https://sannaperzon.medium.com/paper-summary-variational-autoencoders-with-pytorch-implementation-1b4b23b1763a#:~:text=The%20goal%20of%20the%20VAE,been%20used%20for%20image%20generation.
 import torch
 import torch.nn as nn
 from torchvision import transforms
