@@ -1,5 +1,6 @@
 .python-version
 models/*
+docs
 model/*
 data/*
 data
